@@ -1,17 +1,24 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React,{usestate} from "react";
+ import styles from "./searchbar.module.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+ const Searchbar =(props) => {
+   const{ search, onSearchChange} =props;
+   const onChangeSearch =(e) => {
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+const value =e.target.value;
+onSearchChange(value);
+
+   };
+   
+   return(
+    <div className="styles.container">
+        <input className={styles.input} placehoolder="searchusername" value={search} onChange={onChangeSearch} />
+    </div>
+
+   
+   );
+   
+
+
+ };
+ export default Searchbar;
