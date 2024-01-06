@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Manrope' rel='stylesheet'>
+
+<link href='https://fonts.googleapis.com/css?family=Barlow' rel='stylesheet'>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.cdnfonts.com/css/bauhaus-modern" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baumans&family=Clicker+Script&family=Poppins:ital,wght@0,200;0,300;0,400;0,700;1,100&display=swap" rel="stylesheet">
+    
+<link href="https://www.dafontfree.net/embed/YmF1aGF1cy1odi1idC1oZWF2eSZkYXRhLzQ2L2IvNjIzMjcvYmF1aGF1cyBoZWF2eSBidC50dGY" rel="stylesheet" type="text/css"/>
+
+<title>Naveen's Digital Clock</title>
+</head>
+<body>
+    <section class="left-content">
+
+  <div class="left-main">
+
+
+<div class="img">
+
+    <img src="/digital-clock/assets/clock_logo.png" alt="">
+</div>
+<div class="time-con">
+<div class="item-con">
+<div class="items">
+<img src="/digital-clock/assets/wake_up.png" alt="">
+
+<h1>    Set wake up time</h1>
+<select name="morning" id="morning" class="dropdown">
+    <option value="8"> 08am-09am </option>      
+            <option value="9"> 09-10am </option>
+            <option value="10"> 10m-11pm </option>
+            <option value="11"> 11pm-12pm </option>
+            <option value="12">12am-13am </option>
+            <option value="13">13-14am </option>
+            <option value="14"> 14m-15pm </option>
+            <option value="15"> 15pm-16pm </option>
+            <option value="16"> 16am-17am </option>
+            <option value="17"> 17-18am </option>
+            <option value="18"> 18m-19pm </option>
+            
+        
+            <option value="19"> 19pm-20pm </option>
+            <option value="20"> 20am-21am </option>
+            <option value="21"> 21-22am </option>
+            <option value="22"> 22m-23pm </option>
+            <option value="23"> 23pm-24pm </option>
+
+</select>
+
+</div>
+<div class="itemss">
+
+    
+</div>
+<div class="items">
+    <img src="/digital-clock/assets/wake_up.png" alt="">
+    
+    <h1> set Lunch time</h1>
+    <select name="morning" id="" class="dropdown">
+      
+    </select>
+    
+    </div>
+    <div class="itemss">
+    
+        
+    </div>
+    <div class="items">
+        <img src="/digital-clock/assets/wake_up.png" alt="">
+        
+        <h1>    Set Nap time</h1>
+        <select name="morning" id="" class="dropdown">
+           
+
+
+        </select>
+        
+        </div>
+        <div class="itemss">
+      
+            
+        </div>
+        <div class="items">
+            <img src="/assets/clock_logo.png" alt="">
+            
+            <h1>    Set night time</h1>
+            <select name="morning" id="" class="dropdown">
+                
+            </select>
+            
+            </div>
+
+
+</div>
+
+</div>
+
+
+<div class="head-container">
+    <h1>GOOD MORNING!! WAKE UP !!</h1>
+</div>
+
+<div class="btn-con">
+    <button class="btn" id="button" onclick="clicked()">set alarm</button>
+</div>
+
+
+</div>
+
+</section>
+
+<section class="right-content">
+    <div class="right">
+<div class="clock">
+
+    <div class="clock-sub">
+    <div class="time-txt">
+        <p>time</p>
+    </div>
+<div class="timeline">
+
+<div class="hrs">
+<h1 id="hrs"></h1>
+<h2>hours</h2>  
+</div>
+<div class="sep">
+<h1>:</h1>
+</div>  
+
+<div class="hrs">
+    <h1  id="mins"></h1>
+    <h2>min</h2>
+    </div>
+    <div class="sep">
+    <h1>:</h1>
+    </div>
+    <div class="hrs">
+        <h1 id="sec"></h1>
+        <h2>secs</h2>
+        </div>
+        
+        <div class="hrs am">
+            <h1 id="am"></h1>
+            </div>
+
+</div>
+
+
+
+    </div>
+</div>
+
+<div class="right-content-text">
+
+<h1 id="alert">GRAB SOME HEALTHY BREAKFAST!!!</h1>
+
+</div>
+
+<div class="right-content-image" id="image">
+
+   
+    </div>
+
+
+
+
+</div>
+
+
+
+
+</section>
+   
+<script src="script.js">
+</script>
+</body>
+</html>
