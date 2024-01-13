@@ -1,0 +1,76 @@
+*{
+margin: 0;
+padding: 0;
+font-family: 'Salsa', cursive;
+text-decoration: none;
+}
+
+section{
+    background: linear-gradient(to right, #2E3192 , #1BFFFF);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-direction: column;
+}
+section h1{
+   
+    font-size: 50px;
+    background: linear-gradient(to right, #ffffff,#fdfdfd);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 200% auto;
+    animation: textbg 1s linear infinite ease-in;
+}
+.row{
+  
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: space-between;
+    gap: 20px;
+}
+.btnyes{
+    padding: 12px 40px;
+    background-color: white;
+}
+.btnno{
+    padding: 12px 40px;
+    background-color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;  
+}
+
+.btnno:hover {
+    transform: translateX(20px);
+    display: none;
+     /* Move the button 20px to the right */
+     animation: moveRight 0.5s forwards;
+}
+
+
+@keyframes textbg {
+    
+    0% {
+        background-position: 0% 75%;
+    }
+    
+    50% {
+        background-position: 100% 30%;
+    }
+    100% {
+        background-position: 0 75%;
+    }
+
+}
+
+@keyframes moveRight {
+    to {
+        transform: translateY(200px);
+     /* Move the button 20px to the right */
+    }
+}
+
